@@ -355,7 +355,8 @@ pre {
 .footer-content {
   font-family: "Josefin Sans";
   font-weight: 300;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  text-align: left; }
 
 .footer-col {
   float: left;
