@@ -8,12 +8,12 @@
 <div class="wrapper">
   <div class="trigger site-navigation">
     {% for sitePage in site.pages %}
-    {% if sitePage.title %}
-    <a class="page-link" href="{{sitePage.url | prepend: site.baseurl }}">{{sitePage.title}}</a>
-    {% if sitePage != site.pages.last %}
-      <span class="exclamationMark">/</span>
-    {% endif %}
-    {% endif %}
+      {% if sitePage.title %}
+        <a class="page-link" href="{{sitePage.url | prepend: site.baseurl }}">{{sitePage.title}}</a>
+        {% if forloop.last != true %}
+          <span class="exclamationMark">/</span>
+        {% endif %}
+      {% endif %}
     {% endfor %}
   </div>
 </div>
