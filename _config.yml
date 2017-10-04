@@ -13,7 +13,6 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://siddharthsharma.io" # the base hostname & protocol for your site
 linkedin_username: siddarthsharma
 github_username: voixdusid
-# email_address: hey@siddharthsharma.io
 paginate: 3
 
 gems: [jekyll-paginate, kramdown]
