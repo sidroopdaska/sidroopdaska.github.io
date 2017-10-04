@@ -3,5 +3,5 @@ layout: page
 title : About
 ---
 
-Coming soon...Please check back later.
+Coming soon...Please check back later
 
