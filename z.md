@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: page
 title: CV
-permalink: /documents/
+permalink: /assets/SiddharthSharma_CV.pdf
 ---

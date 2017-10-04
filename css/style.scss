@@ -390,10 +390,6 @@ pre {
   text-indent: 6px;
   font-family: 'Josefin Sans';
 }
-.exclamationMark {
-  // padding-left: 2em;
-  // padding-right: 2em;
-}
 .site-navigation {
   color: #aaa;
   text-transform: uppercase;
@@ -488,6 +484,10 @@ pre {
 .social-media-list {
   list-style: none;
   margin-left: 0;
+
+  li {
+    text-align: left;
+  }
 }
 .small-site-title {
   font-family: "PT Sans";

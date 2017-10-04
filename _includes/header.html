@@ -9,10 +9,10 @@
   <div class="trigger site-navigation">
     {% for sitePage in site.pages %}
     {% if sitePage.title %}
-    {% if sitePage != site.pages[0] %}
-    <span class="exclamationMark">/</span>
-    {% endif %}
     <a class="page-link" href="{{sitePage.url | prepend: site.baseurl }}">{{sitePage.title}}</a>
+    {% if sitePage != site.pages.last %}
+      <span class="exclamationMark">/</span>
+    {% endif %}
     {% endif %}
     {% endfor %}
   </div>

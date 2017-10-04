@@ -340,6 +340,9 @@ pre {
 .social-media-list {
   list-style: none;
   margin-left: 0; }
+  .contact-list li,
+  .social-media-list li {
+    text-align: left; }
 
 .small-site-title {
   font-family: "PT Sans"; }
