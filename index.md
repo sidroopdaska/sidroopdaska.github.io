@@ -3,5 +3,7 @@ layout: page
 title : About
 ---
 
-Coming soon...Please check back later
+![profile-pic](/assets/me.jpg){:class="img-responsive"}
+
+Full stack developer at Microsoft
 

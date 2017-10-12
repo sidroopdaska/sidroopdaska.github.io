@@ -15,6 +15,7 @@ $base-line-height: 1.5;
 $spacing-unit:     30px;
 
 $text-color:       #111;
+$link-color:       #a96bea;
 $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
 
@@ -98,7 +99,8 @@ ul, ol, dl, figure,
  * Images
  */
 img {
-    max-width: 100%;
+    max-width: 70%;
+    border-radius: 50%;
     vertical-align: middle;
 }
 
@@ -146,11 +148,11 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: #aaa !important;
+    color: $link-color !important;
     text-decoration: none;
 
     &:visited {
-        color: darken($brand-color, 15%);
+        color: $link-color;
     }
 
     &:hover {
@@ -391,14 +393,14 @@ pre {
   font-family: 'Josefin Sans';
 }
 .site-navigation {
-  color: #aaa;
+  color: $link-color;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 18px;
   letter-spacing: 2px;
   text-indent: 6px;
   font-family: 'Josefin Sans';
   font-weight: 300;
-  padding-top: 1.5em;
+  padding-top: 0.5em;
 }
 .page-title {
   text-transform: uppercase;
@@ -416,11 +418,11 @@ pre {
   text-transform: lowercase;
 }
 .page-link {
-  color: rgb(170, 170, 170);
+  color: $link-color;
 }
 .site-nav {
   .page-link {
-    color: $text-color;
+    color: $link-color;
     line-height: $base-line-height;
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
