@@ -1,0 +1,10 @@
+<div class="card" onclick="location.href='{{include.href}}';">
+	{% if include.imgsrc%}
+	<img src={{include.imgsrc}} alt="Project Image" style="width:100%">
+	{% else %}
+	<img src="../assets/portfolio/img_avatar.png" alt="No Project Image" style="width:100%">
+	{% endif %}
+	<div class="container">
+		<h4><b>{{include.title}}</b></h4>
+	</div>
+</div>
