@@ -7,7 +7,15 @@ layout: default
 {% for cat in post.categories %}
 {% if cat == page.category %}
 	{% assign href = post.url %}
-	{% include card.html title=post.title imgsrc=post.imgsrc href=href %}
+	{% assign id = post.title | append: post.date %}
+	{% include card.html
+		title=post.title
+		imgsrc=post.imgsrc
+		href=href id=id 
+		content=post.content
+		github=post.github
+		youtube=post.youtuve
+	%}
 {% endif %}
 {% endfor %}
 {% endfor %}

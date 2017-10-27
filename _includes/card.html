@@ -1,10 +1,35 @@
-<div class="card" onclick="location.href='{{include.href}}';">
+<div id="{{include.id}}-card" class="card" onclick="document.getElementById('{{include.id}}-modal').style.display='block'">
 	{% if include.imgsrc%}
-	<img src={{include.imgsrc}} alt="Project Image" style="width:100%">
-	{% else %}
-	<img src="../assets/portfolio/img_avatar.png" alt="No Project Image" style="width:100%">
-	{% endif %}
+	<img src={{include.imgsrc}} alt="Project Image" style="width:100%"> {% else %}
+	<img src="../assets/portfolio/img_avatar.png" alt="No Project Image" style="width:100%"> {% endif %}
 	<div class="container">
-		<h4><b>{{include.title}}</b></h4>
+		<h4>
+			<b>{{include.title}}</b>
+		</h4>
+	</div>
+</div>
+
+<!-- The Modal -->
+<div id="{{include.id}}-modal" class="modal">
+	<!-- The Close Button -->
+	<span id="{{include.id}}-close"
+		class="close"
+		onclick="document.getElementById('{{include.id}}-modal').style.display='none'"
+	>&times;
+	</span>
+
+	<div class="modal-content">
+		<h1>{{include.title}}</h1>
+		{% if include.imgsrc%}
+		<img src={{include.imgsrc}} alt="Project Image" style="width:50%"> {% else %}
+		<img src="../assets/portfolio/img_avatar.png" alt="No Project Image" style="width:50%"> {% endif %}
+		{{include.content}}
+
+		{% if include.github %}
+		<a href="{{include.github}}" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+		{% endif %}
+		{% if include.youtube %}
+		<a href="{{include.youtube}}" target="_blank"><i class="fa fa-youtube fa-2x"></i></a>
+		{% endif %}
 	</div>
 </div>
