@@ -11,8 +11,8 @@ email: hey@siddharthsharma.io
 description: null
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://siddharthsharma.io" # the base hostname & protocol for your site
-linkedin_username: siddarthsharma
-github_username: voixdusid
+linkedin_username: sidroopdaska
+github_username: sidroopdaska
 paginate: 3
 
 gems: [jekyll-paginate, kramdown]
