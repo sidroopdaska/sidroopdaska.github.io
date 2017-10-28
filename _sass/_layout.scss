@@ -1,16 +1,16 @@
 .card {
 	/* Add shadows to create the "card" effect */
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	box-shadow: 7px 4px 8px 0 rgba(0,0,0,0.2);
 	transition: 0.3s;
 	border-radius: 5px; /* 5px rounded corners */
-	width: 350px;
+	width: 320px;
 	cursor: pointer;
-	margin: 1rem 0.5rem;
+	margin: 1rem 1rem;
 }
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	box-shadow: 15px 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 /* Add some padding inside the card container */
@@ -42,15 +42,23 @@ img {
 	overflow: auto; /* Enable scroll if needed */
 	background-color: rgb(0,0,0); /* Fallback color */
 	background-color: rgba(255,255,255,1.0); /* Black w/ opacity */
+
+	&-link {
+		margin-right: 0.5rem;
+	}
+
+	&-description {
+		margin-top: 1rem;
+		text-align: left;
+	}
 }
 
 /* Modal Content (Image) */
 .modal-content {
-	padding-top: 5rem; /* Location of the box */
-	padding-bottom: 5rem;
+	padding-top: 2rem; /* Location of the box */
+	padding-bottom: 2rem;	
 	margin: auto;
 	display: block;
-	padding-bottom: 2rem;
 	width: 80%;
 	max-width: 700px;
 }
