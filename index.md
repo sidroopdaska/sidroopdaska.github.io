@@ -5,5 +5,6 @@ title : About
 
 ![profile-pic](/assets/me.jpg){:class="profile-pic"}
 
-Full stack developer at Microsoft
+<br />
+Deep Learning and Computer vision enthusiast. <br /> Full stack developer at Microsoft.
 

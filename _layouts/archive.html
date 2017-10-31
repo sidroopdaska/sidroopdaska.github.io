@@ -3,21 +3,21 @@ layout: default
 ---
 
 <div class="posts">
-{% for post in site.posts %}
-{% for cat in post.categories %}
-{% if cat == page.category %}
-	{% assign href = post.url %}
-	{% assign id = post.title | append: post.date %}
-	{% include card.html
-		title=post.title
-		imgsrc=post.imgsrc
-		href=href id=id 
-		content=post.content
-		github=post.github
-		youtube=post.youtube
-	%}
-{% endif %}
-{% endfor %}
-{% endfor %}
+	{% for post in site.posts %}
+	{% for cat in post.categories %}
+	{% if cat == page.category %}
+		{% assign href = post.url %}
+		{% assign id = post.title | append: post.date %}
+		{% include card.html
+			title=post.title
+			imgsrc=post.imgsrc
+			href=href id=id 
+			content=post.content
+			github=post.github
+			youtube=post.youtube
+		%}
+	{% endif %}
+	{% endfor %}
+	{% endfor %}
 </div>
 

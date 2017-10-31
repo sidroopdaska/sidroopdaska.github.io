@@ -379,7 +379,7 @@ pre {
   font-family: 'PT Sans';
   text-transform: capitalize;
   font-weight: 500;
-  margin-top: 1em;
+  margin-top: 0.7em;
   &,
   &:visited {
     color: $grey-color-dark;
@@ -481,6 +481,7 @@ pre {
   bottom: 0;
   width: 100%;
   text-align: center;
+  margin-top: 2rem;
 }
 .footer-heading {
   font-size: 18px;
@@ -491,10 +492,6 @@ pre {
 	display: inline-block;
   list-style: none;
   margin-left: 0;
-
-  li {
-    text-align: left;
-  }
 }
 .contact-list {
 	margin-left: -1.5rem;
@@ -523,6 +520,7 @@ pre {
  */
 .page-content {
   padding: 0;
+  margin-top: 4rem;
 }
 .page-heading {
   font-size: 20px;
