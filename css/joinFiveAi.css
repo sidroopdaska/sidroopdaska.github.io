@@ -28,8 +28,87 @@ body {
     letter-spacing: -.05rem;
 }
 
+.intro {
+  padding-bottom: 0;
+}
+
+@media only screen and (max-width: 990px) {
+  .intro-desc {
+    text-align: center;
+  }
+
+  .intro-img {
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  .intro-img {
+    padding-right: 0;
+  }
+  
+  .intro-desc {
+    position: relative;
+    left: 6%;
+    padding-right: 0;
+    padding-top: 6rem;
+  }
+}
+
+.blink {
+  font-size: 2rem;
+  -webkit-animation-name: blinker;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-name: blinker;
+  -moz-animation-duration: 1s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: infinite;
+  animation-name: blinker;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes blinker {
+  0% {
+      opacity: 1;
+  }
+
+  50% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+@keyframes blinker {
+  0% {
+      opacity: 1;
+  }
+
+  50% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+.intro-highlight {
+  color: var(--blue);
+}
+
 .why-fiveai-col {
     text-align: center;
+}
+
+.why-fiveai-img {
+  margin: 1rem;
 }
 
 .why-me-divider {
@@ -180,13 +259,6 @@ header h1 {
 
 .timeline-img img {
   display: block;
-  width: 50px;
-  height: 50px;
-  position: relative;
-  left: 26%;
-  top: 25%;
-  margin-left: -12px;
-  margin-top: -12px;
 }
 
 .is-hidden {
@@ -320,7 +392,7 @@ header h1 {
   border: 7px solid transparent;
   border-right: 7px solid #ffffff;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .timeline-content h2 {
     font-size: 20px;
     font-size: 1.25rem;
@@ -333,13 +405,13 @@ header h1 {
     font-size: 14px;
     font-size: 0.875rem;
   }
+}
 
+@media only screen and (max-width: 1169px) {
   .timeline-img img {
-    width: 30px;
-    height: 30px;
     position: relative;
-    left: 40%;
-    top: 40%; 
+    left: 10%;
+    top: 10%; 
   }
 }
 @media only screen and (min-width: 1170px) {
@@ -391,6 +463,16 @@ header h1 {
     -webkit-animation: cd-bounce-2 0.6s;
     -moz-animation: cd-bounce-2 0.6s;
     animation: cd-bounce-2 0.6s;
+  }
+
+  .timeline-img img {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: 28%;
+    top: 25%;
+    margin-left: -12px;
+    margin-top: -12px;
   }
 }
 
