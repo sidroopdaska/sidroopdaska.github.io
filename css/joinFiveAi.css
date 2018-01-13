@@ -46,17 +46,14 @@ body {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
 }
 
-/* .why-me-img {
-    border-radius: 50%;
-    box-shadow: 0 0 0 4px #ffffff, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 4px 0 4px rgba(0, 0, 0, 0.05);
-} */
-
 .back-to-top {
     cursor: pointer;
     position: fixed;
     bottom: 20px;
     right: 20px;
     display:none;
+    z-index: 100;
+    background: #eb008d;
 }
 
 /* -------------------------------- 
@@ -294,7 +291,7 @@ animation: cd-bounce-1 0.6s;
   background: #ffffff;
   border-radius: 0.25em;
   padding: 1em;
-  box-shadow: 0 3px 0 #d7e4ed;
+  box-shadow: 3px 3px 20px grey;
 }
 .timeline-content::after {
   clear: both;
