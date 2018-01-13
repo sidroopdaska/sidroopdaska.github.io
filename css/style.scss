@@ -15,7 +15,7 @@ $base-line-height: 1.5;
 $spacing-unit:     30px;
 
 $text-color:       #111;
-$link-color:       #a96bea;
+$link-color:       #a0a6ad;
 $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
 
@@ -148,16 +148,16 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $link-color !important;
-    text-decoration: none;
+    color: $link-color;
+    text-decoration: none !important;
+    text-decoration-line: none !important;
 
     &:visited {
         color: $link-color;
     }
 
     &:hover {
-        color: black !important;
-        border-bottom: 1px dotted black ;
+        color: black;
     }
 
     &.page-link{
@@ -487,14 +487,21 @@ pre {
   font-size: 18px;
   margin-bottom: $spacing-unit / 2;
 }
-.contact-list,
+
 .social-media-list {
 	display: inline-block;
   list-style: none;
   margin-left: 0;
+  font-size: 1rem;
+  font-weight: normal;
 }
-.contact-list {
-	margin-left: -1.5rem;
+
+.made-with {
+  margin-left: -1.5rem;
+  display: inline-block;
+  list-style: none;
+  margin-left: 0;
+  font-weight: lighter;
 }
 .small-site-title {
   font-family: "PT Sans";

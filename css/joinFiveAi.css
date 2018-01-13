@@ -1,3 +1,9 @@
+:root {
+	--blue: #0177f4;
+  --pink: #eb008d;
+  --white: #ffffff;
+}
+
 body {
     margin: 0;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -7,19 +13,6 @@ body {
     color: #212529;
     text-align: left;
     background-color: #fafafa;
-}
-
-.swag-line::before {
-    content: '';
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 5px;
-    z-index: 2;
-    background-color: #ac2aa1;
-    background: linear-gradient(45deg, #6b15a1, #ac2aa1);
 }
 
 .section-divider {
@@ -53,7 +46,7 @@ body {
     right: 20px;
     display:none;
     z-index: 100;
-    background: #eb008d;
+    background: var(--pink);
 }
 
 /* -------------------------------- 
@@ -72,19 +65,8 @@ html * {
   box-sizing: border-box;
 }
 
-a {
-  color: #acb7c0;
-  text-decoration: none;
-  font-family: "Open Sans", sans-serif;
-}
-
 img {
   max-width: 100%;
-}
-
-h1, h2 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
 }
 
 /* -------------------------------- 
@@ -191,35 +173,31 @@ header h1 {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  box-shadow: 0 0 0 4px #ffffff, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 0 4px var(--blue), inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+  background-color: var(--white);
+  z-index: 1;
 }
+
 .timeline-img img {
   display: block;
-  width: 24px;
-  height: 24px;
+  width: 50px;
+  height: 50px;
   position: relative;
-  left: 50%;
-  top: 50%;
+  left: 26%;
+  top: 25%;
   margin-left: -12px;
   margin-top: -12px;
 }
-.timeline-img.cd-picture {
-  background: #75ce66;
-}
-.timeline-img.cd-movie {
-  background: #c03b44;
-}
-.timeline-img.cd-location {
-  background: #f0ca45;
-}
+
 .is-hidden {
     visibility: hidden;
   }
+
 .bounce-in {
-visibility: visible;
--webkit-animation: cd-bounce-1 0.6s;
--moz-animation: cd-bounce-1 0.6s;
-animation: cd-bounce-1 0.6s;
+  visibility: visible;
+  -webkit-animation: cd-bounce-1 0.6s;
+  -moz-animation: cd-bounce-1 0.6s;
+  animation: cd-bounce-1 0.6s;
 }
 
 @media only screen and (min-width: 1170px) {
@@ -301,26 +279,31 @@ animation: cd-bounce-1 0.6s;
 .timeline-content h2 {
   color: #303e49;
 }
-.timeline-content p, .timeline-content .cd-read-more, .timeline-content .cd-date {
+.timeline-content p, .timeline-content .read-more, .timeline-content .cd-date {
   font-size: 13px;
   font-size: 0.8125rem;
 }
-.timeline-content .cd-read-more, .timeline-content .cd-date {
+.timeline-content .timeline-content .cd-date {
   display: inline-block;
 }
 .timeline-content p {
   margin: 1em 0;
   line-height: 1.6;
 }
-.timeline-content .cd-read-more {
+.timeline-content .read-more {
+  text-decoration-line: none;
   float: right;
-  padding: .8em 1em;
-  background: #acb7c0;
-  color: #ffffff;
+  padding: .6em 1em;
+  background: #ffffff;
+  color: var(--pink);
   border-radius: 0.25em;
+  border: 2px solid var(--pink);
 }
-.no-touch .timeline-content .cd-read-more:hover {
-  background-color: #bac4cb;
+.timeline-content .read-more:hover {
+  text-decoration: none;
+  text-decoration-line: none;
+  background: var(--pink);
+  color: var(--white);
 }
 .timeline-content .cd-date {
   float: left;
@@ -346,9 +329,17 @@ animation: cd-bounce-1 0.6s;
     font-size: 16px;
     font-size: 1rem;
   }
-  .timeline-content .cd-read-more, .timeline-content .cd-date {
+  .timeline-content .read-more, .timeline-content .cd-date {
     font-size: 14px;
     font-size: 0.875rem;
+  }
+
+  .timeline-img img {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    left: 40%;
+    top: 40%; 
   }
 }
 @media only screen and (min-width: 1170px) {
@@ -363,7 +354,7 @@ animation: cd-bounce-1 0.6s;
     border-color: transparent;
     border-left-color: #ffffff;
   }
-  .timeline-content .cd-read-more {
+  .timeline-content .read-more {
     float: left;
   }
   .timeline-content .cd-date {
@@ -384,7 +375,7 @@ animation: cd-bounce-1 0.6s;
     border-color: transparent;
     border-right-color: #ffffff;
   }
-  .timeline-block:nth-child(even) .timeline-content .cd-read-more {
+  .timeline-block:nth-child(even) .timeline-content .read-more {
     float: right;
   }
   .timeline-block:nth-child(even) .timeline-content .cd-date {
