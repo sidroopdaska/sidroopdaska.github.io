@@ -99,8 +99,12 @@ body {
   }
 }
 
-.intro-highlight {
+.intro-highlight, .name, .name:visited {
   color: var(--blue);
+}
+
+.name:hover {
+  text-decoration-line: underline !important;
 }
 
 .why-fiveai-col {
