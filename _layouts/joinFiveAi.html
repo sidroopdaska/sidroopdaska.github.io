@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="Siddharth, Sharma, personal, website, blog, portfolio">
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+    crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|Source+Sans+Pro:400,700,200,300|Josefin+Sans:400,600,700,300'
+    rel='stylesheet' type='text/css'>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="{{ " /css/style.css " | prepend: site.baseurl }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ " /feed.xml
+    " | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="stylesheet" href="{{ " /css/joinFiveAi.css " | prepend: site.baseurl }}">
+</head>
+
+<body>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Hello! My name is Siddharth Sharma</h1>
+      <p class="lead">I would like to help Five.ai reach 'Five AI'</p>
+    </div>
+  </div>
+
+  <div class='container'>
+    <div class='row'>
+      <div class='col-sm-4 why-fiveai-col'>
+        <p>Reason 1</p>
+      </div>
+      <div class='col-sm-4 why-fiveai-col'>
+        <p>Reason 2</p>
+      </div>
+      <div class='col-sm-4 why-fiveai-col'>
+        <p>Reason 3</p>
+      </div>
+    </div>
+
+    <hr class='section-divider' />
+
+    <div class="row">
+      <div class="col-md-7">
+        <h3 class="section-heading">First featurette heading.
+          <span class="text-muted">It'll blow your mind.</span>
+          </h2>
+          <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo
+            cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
+      <div class="col-md-5 text-center">
+        <img class="img-fluid mx-auto" src="../assets/number-one.png" alt="Why me numbered list image">
+      </div>
+    </div>
+    <hr class='why-me-divider' />
+    <div class="row">
+      <div class="col-md-7 order-md-2">
+        <h3 class="section-heading">Oh yeah, it's that good.
+          <span class="text-muted">See for yourself.</span>
+          </h2>
+          <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo
+            cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
+      <div class="col-md-5 order-md-1 text-center">
+        <img class="img-fluid mx-auto" src="../assets/number-two.png" alt="Why me numbered list image">
+      </div>
+    </div>
+    <hr class='why-me-divider' />
+    <div class="row">
+      <div class="col-md-7">
+        <h3 class="section-heading">And lastly, this one.
+          <span class="text-muted">Checkmate.</span>
+          </h2>
+          <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo
+            cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
+      <div class="col-md-5 text-center">
+        <img class="img-fluid mx-auto" src="../assets/number-three.png" alt="Why me numbered list image">
+      </div>
+    </div>
+
+    <hr class='section-divider' />
+  </div>
+  <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button"
+    title="Click to return on the top page"
+    data-toggle="tooltip" data-placement="left">
+    <span class="fa fa-chevron-up text-white"></span>
+  </a>
+
+  {% include footer.html %}
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+    crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 50) {
+          $('#back-to-top').fadeIn();
+        } else {
+          $('#back-to-top').fadeOut();
+        }
+      });
+      // scroll body to 0px on click
+      $('#back-to-top').click(function () {
+        $('#back-to-top').tooltip('hide');
+        $('body,html').animate({
+          scrollTop: 0
+        }, 500);
+        return false;
+      });
+
+      $('#back-to-top').tooltip('show');
+
+    });
+  </script>
+</body>
+
+</html>
