@@ -15,6 +15,10 @@ body {
     background-color: #fafafa;
 }
 
+a, a:visited {
+  color: var(--blue);
+}
+
 .section-divider {
     text-align: center;
     margin: 4rem 0;
@@ -99,12 +103,8 @@ body {
   }
 }
 
-.intro-highlight, .name, .name:visited {
+.intro-highlight {
   color: var(--blue);
-}
-
-.name:hover {
-  text-decoration-line: underline !important;
 }
 
 .why-fiveai-col {
@@ -157,7 +157,7 @@ Modules - reusable parts of our design
 -------------------------------- */
 .timeline-container {
   /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
-  width: 90%;
+  width: 100%;
   max-width: 1170px;
   margin: 0 auto;
 }
@@ -355,9 +355,9 @@ header h1 {
 .timeline-content h2 {
   color: #303e49;
 }
-.timeline-content p, .timeline-content .read-more, .timeline-content .cd-date {
+.timeline-content p, .timeline-content ul>li>a, .timeline-content .read-more, .timeline-content .cd-date {
   font-size: 13px;
-  font-size: 0.8125rem;
+  font-size: 0.9rem;
 }
 .timeline-content .timeline-content .cd-date {
   display: inline-block;
