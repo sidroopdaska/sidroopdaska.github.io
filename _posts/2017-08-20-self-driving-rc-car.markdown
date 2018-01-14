@@ -6,6 +6,7 @@ github: https://github.com/sidroopdaska/SelfDrivingRCCar
 youtube: https://www.youtube.com/watch?v=8V3rm8NNSXQ&feature=youtu.be
 categories: ["portfolio"]
 ---
+
 A scaled down version of self-driving system using Neural Networks and OpenCV. The system comprises of:
 * Raspberry Pi with a camera and an ultrasonic sensor as inputs,
 * Server that handles:

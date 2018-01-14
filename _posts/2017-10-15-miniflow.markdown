@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "Miniflow"
+github: https://github.com/sidroopdaska/SelfDrivingCar/tree/master/Miniflow
+imgsrc: ../assets/portfolio/miniflow.png
+categories: ["portfolio"]
+---
+
+* Implemented Miniflow, a mini neural network library from scratch with the goal of understanding backpropagation and computational graphs.
+
+* Trained a 2 layer neural network using Miniflow to predict the Boston housing prices.
+
+
