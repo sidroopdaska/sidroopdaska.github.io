@@ -159,6 +159,9 @@ a {
     }
 
     &.page-link{
+      text-decoration: none;
+      text-decoration-line: none;
+      font-weight: 300;
       &:hover {
           color: $text-color;
           border-bottom: 1px dotted black ;
@@ -377,10 +380,13 @@ pre {
   font-family: 'PT Sans';
   text-transform: capitalize;
   font-weight: 500;
-  margin-top: 0.7em;
-  &,
-  &:visited {
+  margin-top: 0.8em;
+  
+  a,
+  a:visited {
     color: $grey-color-dark;
+    text-decoration: none;
+    text-decoration-line: none;
   }
 }
 .site-description {
@@ -480,7 +486,13 @@ pre {
   width: 100%;
   text-align: center;
   margin-top: 2rem;
+
+  a, a:visited, a:hover {
+    text-decoration: none;
+    text-decoration-line: none;
+  }
 }
+
 .footer-heading {
   font-size: 18px;
   margin-bottom: $spacing-unit / 2;
