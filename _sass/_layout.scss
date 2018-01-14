@@ -34,8 +34,8 @@ img {
 	justify-content: center;
 }
 
-/* The Modal (background) */
-.modal {
+/* The pmodal (background) */
+.pmodal {
 	display: none; /* Hidden by default */
 	position: fixed; /* Stay in place */
 	z-index: 1; /* Sit on top */
@@ -55,10 +55,11 @@ img {
 		margin-top: 1rem;
 		text-align: left;
 	}
+	padding: 2rem;
 }
 
-/* Modal Content (Image) */
-.modal-content {
+/* pmodal Content (Image) */
+.pmodal-content {
 	padding-top: 2rem; /* Location of the box */
 	padding-bottom: 2rem;	
 	margin: auto;
@@ -67,8 +68,8 @@ img {
 	max-width: 700px;
 }
 
-/* Add Animation - Zoom in the Modal */
-.modal-content { 
+/* Add Animation - Zoom in the pmodal */
+.pmodal-content { 
 	-webkit-animation-name: zoom;
 	-webkit-animation-duration: 0.6s;
 	animation-name: zoom;
@@ -86,17 +87,17 @@ img {
 }
 
 /* The Close Button */
-.close {
+.pmodal-close {
 	position: absolute;
-	top: 5px;
+	top: -0.5rem;
 	right: 35px;
 	color: #bbb;
 	font-size: 80px;
 	transition: 0.5s;
 }
 
-.close:hover,
-.close:focus {
+.pmodal-close:hover,
+.pmodal-close:focus {
 	color: #000;
 	text-decoration: none;
 	cursor: pointer;
@@ -104,7 +105,7 @@ img {
 
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
-	.modal-content {
+	.pmodal-content {
 		width: 90%;
 	}
 }

@@ -158,11 +158,13 @@ a {
         color: black;
     }
 
-    &.page-link{
+    &.page-linker{
       text-decoration: none;
       text-decoration-line: none;
       font-weight: 300;
       &:hover {
+          text-decoration: none;
+          text-decoration-line: none;
           color: $text-color;
           border-bottom: 1px dotted black ;
       }
@@ -420,11 +422,11 @@ pre {
   text-align: center;
   text-transform: lowercase;
 }
-.page-link {
+.page-linker {
   color: $link-color;
 }
 .site-nav {
-  .page-link {
+  .page-linker {
     color: $link-color;
     line-height: $base-line-height;
     // Gaps between nav items, but not on the last one
@@ -464,7 +466,7 @@ pre {
       display: block;
       padding-bottom: 5px;
     }
-    .page-link {
+    .page-linker {
       display: block;
       padding: 5px 10px;
       &:not(:last-child) {

@@ -1,36 +1,36 @@
-<div id="{{include.id}}-card" class="card" onclick="document.getElementById('{{include.id}}-modal').style.display='block'">
+<div id="{{include.id}}-card" class="card" onclick="document.getElementById('{{include.id}}-pmodal').style.display='block'">
 	{% if include.imgsrc%}
 	<img src={{include.imgsrc}} alt="Project Image" style="width:100%"> {% else %}
 	<img src="../assets/portfolio/imgAvatar.png" alt="No Project Image" style="width:100%"> {% endif %}
 	<div class="container">
-		<h3>
+		<h5 class="font-weight-normal mt-3">
 			{{include.title}}
-		</h3>
+		</h5>
 	</div>
 </div>
 
 <!-- The Modal -->
-<div id="{{include.id}}-modal" class="modal">
+<div id="{{include.id}}-pmodal" class="pmodal">
 	<!-- The Close Button -->
 	<span id="{{include.id}}-close"
-		class="close"
-		onclick="document.getElementById('{{include.id}}-modal').style.display='none'"
+		class="pmodal-close"
+		onclick="document.getElementById('{{include.id}}-pmodal').style.display='none'"
 	>&times;
 	</span>
 
-	<div class="modal-content">
-		<h1>{{include.title}}</h1>
+	<div class="pmodal-content">
+		<h2 class='mb-5'>{{include.title}}</h2>
 		{% if include.imgsrc%}
 		<img src={{include.imgsrc}} alt="Project Image" style="width:50%"> {% else %}
 		<img src="../assets/portfolio/imgAvatar.png" alt="No Project Image" style="width:50%"> {% endif %}
 		<br /> <br />
 		{% if include.github %}
-		<a href="{{include.github}}" target="_blank" class="modal-link"><i class="fa fa-github fa-2x"></i></a>
+		<a href="{{include.github}}" target="_blank" class="pmodal-link"><i class="fa fa-github fa-2x"></i></a>
 		{% endif %}
 		{% if include.youtube %}
-		<a href="{{include.youtube}}" target="_blank" class="modal-link"><i class="fa fa-youtube fa-2x"></i></a>
+		<a href="{{include.youtube}}" target="_blank" class="pmodal-link"><i class="fa fa-youtube fa-2x"></i></a>
 		{% endif %}
-		<div class="modal-description">
+		<div class="pmodal-description">
 			{{include.content}}
 		</div>
 	</div>
