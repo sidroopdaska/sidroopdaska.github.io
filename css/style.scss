@@ -155,7 +155,7 @@ a {
     }
 
     &:hover {
-        color: black;
+        color: $text-color;
     }
 
     &.page-linker{
@@ -489,9 +489,13 @@ pre {
   text-align: center;
   margin-top: 2rem;
 
-  a, a:visited, a:hover {
-    text-decoration: none;
-    text-decoration-line: none;
+  ul {
+    li {
+      a, a:visited, a:hover {
+        text-decoration: none;
+        text-decoration-line: none;
+      }
+    }
   }
 }
 
