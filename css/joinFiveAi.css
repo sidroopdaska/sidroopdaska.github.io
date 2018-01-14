@@ -13,7 +13,11 @@ body {
     line-height: 1.5;
     color: #212529;
     text-align: left;
-    background-color: #fafafa;
+    background-color: var(--white);
+}
+
+p {
+  text-align: justify;
 }
 
 a, a:visited {
@@ -356,7 +360,7 @@ header h1 {
 .timeline-content {
   position: relative;
   margin-left: 60px;
-  background: #ffffff;
+  background: #fafafa;
   border-radius: 0.25em;
   padding: 1em;
   box-shadow: 3px 3px 20px grey;
@@ -603,4 +607,16 @@ header h1 {
     -o-transform: translateX(0);
     transform: translateX(0);
   }
+}
+
+.social-media-list a, .social-media-list a:visited {
+  color: var(--gray);
+}
+
+.social-media-list a:hover {
+  color: black;
+}
+
+.conclusion {
+  color: var(--blue);
 }
