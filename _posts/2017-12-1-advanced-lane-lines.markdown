@@ -3,7 +3,7 @@ layout: post
 title:  "Advanced Lane Lines Detection"
 github: https://github.com/sidroopdaska/SelfDrivingCar/tree/master/AdvancedLaneLinesDetection
 youtube: https://youtu.be/leUGLrnGym4
-imgsrc: ../assets/portfolio/miniflow.png
+imgsrc: ../assets/portfolio/advanced-lane-lines.png
 categories: ["portfolio"]
 ---
 

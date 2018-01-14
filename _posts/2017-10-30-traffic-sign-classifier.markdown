@@ -2,7 +2,7 @@
 layout: post
 title:  "Traffic Sign Classifier"
 github: https://github.com/sidroopdaska/SelfDrivingCar/tree/master/TrafficSignClassifier
-imgsrc: ../assets/portfolio/miniflow.png
+imgsrc: ../assets/portfolio/traffic-sign-classifier.png
 categories: ["portfolio"]
 ---
 

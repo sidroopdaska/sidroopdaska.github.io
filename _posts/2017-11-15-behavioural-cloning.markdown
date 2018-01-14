@@ -3,7 +3,7 @@ layout: post
 title:  "Behavioural Cloning"
 github: https://github.com/sidroopdaska/SelfDrivingCar/tree/master/BehaviouralCloning
 youtube: https://youtu.be/sOi37M-DMmk
-imgsrc: ../assets/portfolio/miniflow.png
+imgsrc: ../assets/portfolio/behavioural-cloning.png
 categories: ["portfolio"]
 ---
 

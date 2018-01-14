@@ -3,7 +3,7 @@ layout: post
 title:  "Vehicle Detection & Tracking"
 github: https://github.com/sidroopdaska/SelfDrivingCar/tree/master/VehicleDetectionAndTracking
 youtube: https://youtu.be/Uvac_LIkh9s
-imgsrc: ../assets/portfolio/miniflow.png
+imgsrc: ../assets/portfolio/vehicle-detection-tracking.png
 categories: ["portfolio"]
 ---
 
