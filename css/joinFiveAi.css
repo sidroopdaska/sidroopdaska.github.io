@@ -36,6 +36,19 @@ a, a:visited {
   padding-bottom: 0;
 }
 
+.intro-desc h1 {
+  font-size: 3.4rem;
+}
+
+.intro-desc h3 {
+  font-size: 1.6rem;
+  font-weight:300;
+}
+
+.intro-desc .desc2 {
+  margin-top: -0.8rem;
+}
+
 @media only screen and (max-width: 990px) {
   .intro-desc {
     text-align: center;
