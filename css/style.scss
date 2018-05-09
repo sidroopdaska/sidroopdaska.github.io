@@ -3,8 +3,6 @@
 ---
 @charset "utf-8";
 
-
-
 // Our variables
 $base-font-family: "Source Sans Pro";
 $base-font-size:   16px;
@@ -29,8 +27,6 @@ $content-width:    1200px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
-
-
 // Use media queries like this:
 // @include media-query($on-palm) {
 //     .wrapper {
@@ -44,15 +40,12 @@ $on-laptop:        800px;
     }
 }
 
-
-
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
         "layout",
         "syntax-highlighting"
 ;
-
 
 /**
  * Reset some basic elements
@@ -93,8 +86,6 @@ ul, ol, dl, figure,
     margin-bottom: $spacing-unit / 2;
 }
 
-
-
 /**
  * Images
  */
@@ -103,8 +94,6 @@ ul, ol, dl, figure,
     border-radius: 50%;
     vertical-align: middle;
 }
-
-
 
 /**
  * Figures
@@ -116,8 +105,6 @@ figure > img {
 figcaption {
     font-size: $small-font-size;
 }
-
-
 
 /**
  * Lists
@@ -133,16 +120,12 @@ li {
     }
 }
 
-
-
 /**
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
     font-weight: $base-font-weight;
 }
-
-
 
 /**
  * Links
@@ -262,8 +245,6 @@ pre {
     text-align: center;
 }
 
-
-
 /**
  * Clearfix
  */
@@ -275,8 +256,6 @@ pre {
         clear: both;
     }
 }
-
-
 
 /**
  * Icons
