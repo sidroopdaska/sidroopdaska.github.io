@@ -127,10 +127,22 @@ img {
 }
 
 .intro-list {
-	position: relative;
-	top: 15%;
 	list-style: none;
 	a, a:visited {
 		color: #0177f4
+	}
+}
+
+@media only screen and (max-width: 767px){
+	.intro-list {
+		h1 {text-align: center; }
+		margin-top: 2rem;
+	}
+}
+
+@media only screen and (min-width: 1024px){
+	.intro-list {
+		position: relative;
+		top: 15%;
 	}
 }
